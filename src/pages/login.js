@@ -13,7 +13,12 @@ const LoginPage = () => {
       <div className={styles.form}>
         <h3>LOGIN</h3>
         <div className={styles.social_icons}>
-          <GoogleOutlined className={styles.icon}/>
+          <GoogleOutlined className={styles.icon}
+           onClick={() =>
+            signIn("google", {
+              callbackUrl: "http://localhost:3000/",
+            })
+          }/>
           <div className={styles.vertica}> </div>
           <GithubOutlined
           className={styles.icon}
