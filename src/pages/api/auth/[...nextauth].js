@@ -15,7 +15,7 @@ export const authOptions = {
     }),
   ],
   pages: {
-    signIn: '/login',
+    signIn: '  /login',
     // error: '/api/auth/error',
   }
 };
